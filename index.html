@@ -20,8 +20,18 @@
             </nav>
         </header>
         <main>
-            <div class="informacion">
-                <p>CAJA DE INFORMACION</p>
+            <div class="formulario">
+                <p>CHAT DE GRUPO</p>
+                <form action="proceso.php">
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre" required>
+                    <label>Email: </label>
+                    <input type="email" name="email" required>
+                    <label>Escribe lo que quieras...</label>
+                    <textarea name="area" rows="10" cols="20"></textarea>
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="limpiar" value="Limpiar">
+                </form>
             </div>
             <div class="derecha">
                 <div class="graficos">
@@ -63,6 +73,24 @@
                         <li>En EE. UU., se proyectan más de 70.000 muertes al año para 2050 debido al humo (PM2.5) de incendios, frente a las ~40.000 actuales.</li>
                         <li>El humo de incendios es, según los investigadores, hasta diez veces más tóxico que la contaminación típica de combustibles fósiles.</li>
                         <li>Se espera que algunas regiones como África sean de las más afectadas, con un aumento muy notable en muertes relacionadas con incendios.</li>
+                    </ul>
+                </div>
+                <div class="noticias">
+                    <h1>Australia fija meta de reducción de emisiones del 62‑70 % para 2035</h1>
+                    <p>
+                        El gobierno de Australia ha adoptado una recomendación de su autoridad climática, 
+                        comprometiéndose ante la ONU a recortar sus emisiones 
+                        entre 62 y 70 % para el año 2035, respecto a niveles de años anteriores.
+                    </p>
+                    <ul>
+                        <li>
+                            El rango (62‑70 %) representa un aumento de ambición con respecto a metas previas, pero ha sido criticado por grupos 
+                            ecologistas por no ser suficientemente alto para asegurar mantenerse dentro del límite de calentamiento de 1,5 °C.
+                        </li>
+                        <li>
+                            El Gobierno dice que la estimación del recorte refleja la incertidumbre tecnológica y las diferencias entre estados y 
+                            territorios de Australia.
+                        </li>
                     </ul>
                 </div>
             </div>
