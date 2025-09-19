@@ -1,42 +1,51 @@
 body {
     background-color: rgb(206, 235, 235);
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 /* ENCABEZADO */
 header {
     background-color: rgb(236, 145, 232);
-    width: 100%;
+    width: 100vw;
     height: 80%;
 }
 /* CUERPO */
 main {
     background-color: rgba(68, 208, 240, 0.303);
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    padding: 10px;
-    margin: 5px;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
 }
 /* PANEL IZQUIERDO */
 .informacion {
-    width: 200px;
+    width: 170px;
     height: 100%;
     background-color: brown;
     padding: 10px;
     margin: 5px;
+    border-radius: 5px;
 }
 .contacto {
     width: 200px;
     height: 100%;
     margin: 5px;
+    background-color: blueviolet;
+    border-radius: 5px;
 }
 /* PANEL DERECHO */
 .derecha {
-    width: 600px;
+    width: 570px;
     height: 250px;
     padding: 10px;
     background-color: rgba(128, 255, 0, 0.277);
     margin: 5px;
+    border-radius: 5px;
+    position: relative;
+    left:200px;
 }
 p {
     background-color: antiquewhite;
@@ -45,6 +54,6 @@ p {
 /* PIE */
 footer {
     background-color: azure;
-    width: 100%;
+    width: 100vw;
     height: 30%;
 }
