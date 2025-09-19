@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(206, 235, 235);
-    width: 100vw;
+    background-color: rgb(219, 234, 234);
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -8,24 +8,24 @@ body {
 /* ENCABEZADO */
 header {
     background-color: rgb(236, 145, 232);
-    width: 100vw;
+    width: 100%;
     height: 80%;
 }
 .navegador, .sesion {
     display: inline-block;
-    vertical-align: top; /* Esto asegura que ambos estén alineados en la parte superior */
+    vertical-align: top; 
 }
 
 .navegador {
-    margin-right: 20px; /* Espacio entre los divs, puedes ajustar el valor */
+    margin-right: 20px; 
 }
 /* CUERPO */
 main {
     background-color: rgba(68, 208, 240, 0.303);
-    width: 100vw;
+    width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     border-radius: 15px;
 }
 .informacion, .derecha {
@@ -50,12 +50,13 @@ main {
 }
 /* PANEL DERECHO */
 .derecha {
-    width: 570px;
-    height: 250px;
+    width: 870px;
+    height: auto;
     padding: 10px;
-    background-color: rgba(128, 255, 0, 0.277);
+    background-color: rgba(113, 175, 52, 0.277);
     margin: 5px;
     border-radius: 5px;
+    overflow: hidden;
 }
 p {
     background-color: antiquewhite;
@@ -64,6 +65,6 @@ p {
 /* PIE */
 footer {
     background-color: azure;
-    width: 100vw;
+    width: 100%;
     height: 30%;
 }
