@@ -11,6 +11,14 @@ header {
     width: 100vw;
     height: 80%;
 }
+.navegador, .sesion {
+    display: inline-block;
+    vertical-align: top; /* Esto asegura que ambos estén alineados en la parte superior */
+}
+
+.navegador {
+    margin-right: 20px; /* Espacio entre los divs, puedes ajustar el valor */
+}
 /* CUERPO */
 main {
     background-color: rgba(68, 208, 240, 0.303);
@@ -19,6 +27,10 @@ main {
     margin: 0;
     padding: 0;
     border-radius: 15px;
+}
+.informacion, .derecha {
+    display: inline-block;
+    vertical-align: top;
 }
 /* PANEL IZQUIERDO */
 .informacion {
@@ -44,8 +56,6 @@ main {
     background-color: rgba(128, 255, 0, 0.277);
     margin: 5px;
     border-radius: 5px;
-    position: relative;
-    left:200px;
 }
 p {
     background-color: antiquewhite;
