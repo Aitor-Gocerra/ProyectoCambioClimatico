@@ -1,10 +1,12 @@
 <?php
     $_datos = [
         "nombre" => $_POST["nombre"],
-        "apellidos" => $_POST["apellidos"],
+        "email" => $_POST["email"],
         "telefono" => $_POST["telefono"],
-        "direccion" => $_POST["direccion"],
-        "deportes" => $_POST["deporte"]
+        "password" => $_POST["password"],
+        "genero" => $_POST["genero"],
+        "intereses" => $_POST["intereses"],
+        "condiciones" => $_POST["condiciones"]
     ];
 
     print_r($_datos);
