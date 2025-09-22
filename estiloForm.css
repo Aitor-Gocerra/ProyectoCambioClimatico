@@ -1,0 +1,45 @@
+body {
+    margin: 20px;
+    font-family: Arial;
+}
+
+h1 {
+    color: blue;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    margin: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    width: 200px;
+    padding: 5px;
+}
+
+.genero {
+    margin: 10px 0;
+}
+
+.intereses {
+    margin: 10px 0;
+}
+
+.intereses input {
+    margin: 3px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.botones input {
+    margin-right: 10px;
+    padding: 8px 15px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
