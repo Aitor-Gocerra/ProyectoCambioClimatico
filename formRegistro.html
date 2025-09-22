@@ -4,4 +4,40 @@
         <meta charset="UTF-8">
         <title>FORMULARIO DE REGISTRO</title>
     </head>
+    <body>
+        <h1>FORMULARIO BASICO</h1>
+        <form action="proceso.php" method="post">
+            <label>Nombre: </label>
+            <input type="text" name="nombre">
+
+            <label>Email: </label>
+            <input type="email" name="email" required>
+
+            <label>Telefono: </label>
+            <input type="tel" id="nombre" name="telefono" required>
+
+            <label>Contraseña: </label>
+            <input type="password" name="password" required>
+            
+            <label style="font-weight: bold">Intereses Medioambientales: </label>
+            <div class="intereses">
+                <input type="checkbox" name="intereses[]" value="Calentamiento"><label>Calentamiento Global</label>
+                <input type="checkbox" name="intereses[]" value="Ozono"><label>Capa de Ozono</label>
+                <input type="checkbox" name="intereses[]" value="Microplasticos"><label>Microplasticos</label>
+                <input type="checkbox" name="intereses[]" value="Invernader"><label>Efecto Invernadero</label>
+                <input type="checkbox" name="intereses[]" value="Deforestacion"><label>Deforestacion Mundial</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="condiciones" value="condiciones">
+                <label>Aceptas terminos y condiciones</label>
+            </div>
+            
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
+
+        </form>
+    </body>
 </html>
