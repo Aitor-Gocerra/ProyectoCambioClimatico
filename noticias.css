@@ -1,7 +1,7 @@
 body {
     margin: 0;
     width: 1400px;
-    background-color: rgb(243, 243, 238);
+    background-color: #F5F5DC;
 } 
 /* HEADER */
 nav {
@@ -9,15 +9,17 @@ nav {
     padding-bottom: 5px;
     width: 1400px;
     height: 30px;
-    background-color: bisque;
+    background-color: #E8F4F8;
 }
 a {
     margin-left: 30px;
     margin-top: 10px;
     padding: 5px;
     width: 45px;
-    background-color: rgb(198, 228, 153);
+    background-color: #97BC62;
     font-family: sans-serif;
+    color: #2C5F2D;
+    text-decoration: none;
 }
 a.formulario{
     margin-left: 1015px;
@@ -31,20 +33,21 @@ h1 {
     text-align: center;
     font-size: 110px;
     font-family: Arial, sans-serif;            
-    color: #043b29;
+    color: #2C5F2D;
     letter-spacing: 35px;
 }
 h2, h3 {
     padding: 5px;
+    color: #2C5F2D;
 }
 p {
     padding: 5px;
+    color: #2C5F2D;
 }
 /* MAIN */
 
-
 .noticias {
-    background-color: aliceblue;
+    background-color: #F5F5DC;
     height: 1400px;
     padding: 10px;
     display: grid;
@@ -67,7 +70,7 @@ p {
     grid-row: span 3 / span 3;
     grid-column-start: 1;
     grid-row-start: 3;
-    background-color: bisque;
+    background-color: #B8E6B8;
     padding: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -80,13 +83,17 @@ p {
     grid-row: span 3 / span 3;
     grid-column-start: 2;
     grid-row-start: 1;
-    background-color: cadetblue;
+    background-color: #4A90A4;
     padding: 5px;
+    color: #F5F5DC;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .no4:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.no4 h2, .no4 h3, .no4 p, .no4 li {
+    color: #F5F5DC; /* Beige Natural para contraste */
 }
 .australia {
     width: 325px; 
@@ -110,7 +117,7 @@ p {
     grid-row: span 3 / span 3;
     grid-column-start: 2;
     grid-row-start: 4;
-    background-color: crimson;
+    background-color: #FF7F7F; 
     padding: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -118,12 +125,18 @@ p {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+.no6 h2, .no6 h3, .no6 p {
+    color: #2C5F2D; /* Verde Bosque Profundo para contraste */
+}
 .chimenea {
     width: 670px; 
     height: auto;
     margin-left: 3px;
 }
 
+.no7 h2, .no7 h3, .no7 p {
+    color: #2C5F2D; 
+}
 .no7 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
@@ -144,11 +157,23 @@ p {
     grid-row: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 4;
-    background-color: blue;
+    background-color: #2C5F2D;
+    color: #F5F5DC;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .no8:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-        
+.no8 h2, .no8 h3, .no8 p {
+    color: #F5F5DC; 
+}
+       
+ul {
+    color: inherit;
+}
+
+li {
+    color: inherit;
+    margin-bottom: 5px;
+}
