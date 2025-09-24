@@ -1,20 +1,154 @@
 body {
-    width: 100%;
-    height: 100%;
     margin: 0;
-    padding: 0;
+    width: 1400px;
+    background-color: rgb(243, 243, 238);
+} 
+/* HEADER */
+nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 1400px;
+    height: 30px;
+    background-color: bisque;
 }
-/* ENCABEZADO */
-header {
-    background-color: rgb(236, 145, 232);
-    width: 100%;
-    height: 80%;
+a {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 45px;
+    background-color: rgb(198, 228, 153);
+    font-family: sans-serif;
 }
-.navegador, .sesion {
-    display: inline-block;
-    vertical-align: top; 
+a.formulario{
+    margin-left: 1015px;
+    margin-right: 20px;
 }
 
-.navegador {
-    margin-right: 20px; 
+h1 {
+    margin: 0;
+    padding: 50px;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 110px;
+    font-family: Arial, sans-serif;            
+    color: #043b29;
+    letter-spacing: 35px;
 }
+h2, h3 {
+    padding: 5px;
+}
+p {
+    padding: 5px;
+}
+/* MAIN */
+
+
+.noticias {
+    background-color: aliceblue;
+    height: 1400px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+    
+.no1 {
+    grid-row: span 2 / span 2;
+    padding: 10px;
+}
+.naturaleza {
+    width: 290px; 
+    height: auto;
+    margin-left: 10px;
+}
+
+.no3 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: bisque;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.no3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.no4 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-color: cadetblue;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.no4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.australia {
+    width: 325px; 
+    height: auto;
+    margin-left: 2px;
+}
+
+.no5 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+    padding: 5px;
+}
+.madrid {
+    width: 325px; 
+    height: auto;
+    margin-left: 2px;
+}
+
+.no6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-color: crimson;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.no6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.chimenea {
+    width: 670px; 
+    height: auto;
+    margin-left: 3px;
+}
+
+.no7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    
+}
+.playa {
+    margin-top: 60px;
+    width: 670px; 
+    height: auto;
+}
+.p7 {
+    padding: 20px;
+}
+
+.no8 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    background-color: blue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.no8:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+        
