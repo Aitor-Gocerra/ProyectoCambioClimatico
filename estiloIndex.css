@@ -38,7 +38,7 @@ img {
     margin-left: 15px;
     margin-bottom: 310px;
     padding: 10px;
-    width: 250px;
+    width: 320px;
     height: 330px;
     display: inline-block;
     vertical-align: top;
@@ -56,13 +56,40 @@ form {
 }
 
 .graficos {
-    background-color: aquamarine;
+    background-color: rgb(198, 249, 232);
     margin-top: 5px;
     margin-left: 25px;
     margin-bottom: 10px;
     padding: 10px;
-    width: 1030px;
+    width: 970px;
     height: 630px;
     display: inline-block;
 }
 
+.contacto {
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: rgb(242, 170, 176);
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tabla {
+    background-color: rgb(197, 255, 236);
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 970px;
+    height: 500px;
+    display: inline-block;
+}
+
+table {
+    padding: 10px;
+    width: 970px;
+    height: 500px;
+}
