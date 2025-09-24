@@ -29,7 +29,7 @@ a.formulario{
 h1 {
     margin: 0;
     padding: 50px;
-    background-color: blanchedalmond;
+    background-color: #F5F5DC;
     text-align: center;
     font-size: 110px;
     font-family: Arial, sans-serif;            
@@ -145,7 +145,7 @@ p {
     
 }
 .playa {
-    margin-top: 60px;
+    margin-top: 225px;
     width: 670px; 
     height: auto;
 }
