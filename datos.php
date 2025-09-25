@@ -8,4 +8,10 @@ $_intereses = [
 ];
 
 $_genero = ["Maculino", "Femenino", "No declaro"];
+
+$_usuarios = [
+    1 => ["Aitor", "1234"],
+    2 => ["Miguel", "5678"],
+    3 => ["Isa", "1122"],
+]
 ?>
