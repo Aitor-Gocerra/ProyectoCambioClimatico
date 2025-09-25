@@ -1,9 +1,12 @@
+<?php
+    include 'datos.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>FORMULARIO DE REGISTRO</title>
-        <link rel="stylesheet" href="estiloForm.css">
+        <link rel="stylesheet" href="estilos/estiloForm.css">
     </head>
     <body>
         <img src="imagenes/logo.png" alt="Logo de la empresa">
@@ -23,20 +26,29 @@
 
             <label>Genero: </label>
             <div class="genero">
-                <input type="radio" name="genero" value="masculino"> Masculino<br>
+                <?php
+                    foreach($_genero as $clave => $valor){
+                        echo "<input type='radio' name='genero' value='$clave'>$valor<br>";
+                    }
+                ?>
+                <!--<input type="radio" name="genero" value="masculino"> Masculino<br>
                 <input type="radio" name="genero" value="femenino"> Femenino<br>
-                <input type="radio" name="genero" value="noDeclaro"> No Declaro<br>
+                <input type="radio" name="genero" value="noDeclaro"> No Declaro<br>-->
             </div>
             
             <label>Intereses Medioambientales: </label>
             <div class="intereses">
-                <input type="checkbox" name="intereses[]" value="Calentamiento">Calentamiento Global<br>
+                <?php
+                        foreach($_intereses as $clave => $valor) {
+                            echo "<input type='checkbox' name='intereses[]' value='$clave'>$valor<br>";
+                        }
+                ?>
+                <!--<input type="checkbox" name="intereses[]" value="Calentamiento">Calentamiento Global<br>
                 <input type="checkbox" name="intereses[]" value="Ozono">Capa de Ozono<br>
                 <input type="checkbox" name="intereses[]" value="Microplasticos">Microplasticos<br>
                 <input type="checkbox" name="intereses[]" value="Invernader">Efecto Invernadero<br>
-                <input type="checkbox" name="intereses[]" value="Deforestacion">Deforestacion Mundial<br>
+                <input type="checkbox" name="intereses[]" value="Deforestacion">Deforestacion Mundial<br>-->
             </div>
-
             <br>
             <div>
                 <input type="checkbox" name="condiciones" value="true">Aceptas terminos y condiciones
