@@ -5,7 +5,7 @@ body {
 } 
 /* HEADER */
 nav {
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 5px;
     width: 1400px;
     height: 30px;
@@ -18,12 +18,26 @@ a {
     width: 45px;
     /*background-color: #97BC62;*/
     font-family: sans-serif;
-    color: #2C5F2D;
+    color: #123212;
     text-decoration: none;
+    position: relative;
 }
 a.formulario{
     margin-left: 1015px;
     margin-right: 20px;
+}
+a::after {
+	content: ''; /* Contenido inicial vacio */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #e7c95b; /* color mandarina */
+	transition: width 0.6s ease; /* Tiempo de desplazamiento del subrayado */
+}
+a:hover::after { /* Cuando paso el raton */
+	width: 100%;
 }
 
 /* MAIN */
