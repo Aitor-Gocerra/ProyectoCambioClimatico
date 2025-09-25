@@ -6,28 +6,29 @@
         <link rel="stylesheet" href="estiloForm.css">
     </head>
     <body>
-        <h1>FORMULARIO DE REGISTRO</h1>
+        <img src="imagenes/logo.png" alt="Logo de la empresa">
+        <h1>¡UNETE!</h1>
         <form action="proceso.php" method="post">
             <label>Nombre: </label>
-            <input type="text" name="nombre">
+            <input type="text" class="area" id="nombre" name="nombre">
 
             <label>Email: </label>
-            <input type="email" name="email" required>
+            <input type="email" class="area" id="email" name="email" required>
 
             <label>Telefono: </label>
-            <input type="tel" id="nombre" name="telefono" required>
+            <input type="tel" class="area" id="telefono" name="telefono" required>
 
             <label>Contraseña: </label>
-            <input type="password" name="password" required>
+            <input type="password" class="area" id="contraseña" name="password" required>
 
             <label>Genero: </label>
             <div class="genero">
-                <input type="radio" name="genero" value="masculino"> Masculino
-                <input type="radio" name="genero" value="femenino"> Femenino
-                <input type="radio" name="genero" value="noDeclaro"> No Declaro
+                <input type="radio" name="genero" value="masculino"> Masculino<br>
+                <input type="radio" name="genero" value="femenino"> Femenino<br>
+                <input type="radio" name="genero" value="noDeclaro"> No Declaro<br>
             </div>
             
-            <label style="font-weight: bold">Intereses Medioambientales: </label>
+            <label>Intereses Medioambientales: </label>
             <div class="intereses">
                 <input type="checkbox" name="intereses[]" value="Calentamiento">Calentamiento Global<br>
                 <input type="checkbox" name="intereses[]" value="Ozono">Capa de Ozono<br>
@@ -45,7 +46,9 @@
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpiar">
             </div>
-
         </form>
+        <footer>
+            PROYECTO INTERFACE - Aitor Gomez Cerrato - 2025
+        </footer>
     </body>
 </html>
