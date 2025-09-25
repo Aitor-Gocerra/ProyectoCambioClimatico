@@ -23,7 +23,7 @@
             echo $valor . "<br>";
         }
     }else{
-        echo "No has seleccionado ningun interes";
+        echo "No has seleccionado ningun interes" . "<br>";
     }
 
     echo "Condiciones: ";
