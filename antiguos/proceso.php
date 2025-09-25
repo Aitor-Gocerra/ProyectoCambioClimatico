@@ -4,6 +4,8 @@
 
     echo '<h1> PROCESO 1 </h1>';
 
+    print_r($_POST);  // Con esto ya genero un unico array con valores 
+
     $_datos = [
         "nombre" => $_POST["nombre"],
         "email" => $_POST["email"],
@@ -15,10 +17,11 @@
     ];
 
     print_r($_datos);
+
     echo '<br>';
 
     foreach ($_datos as $clave => $valor){
-        if(isset($valor)){
+        if(isset($valor) || !empty($valor)){
             echo $clave . ": ";
             if(is_array($valor)){
                 foreach ($valor as $dato){
