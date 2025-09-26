@@ -4,7 +4,8 @@ $_intereses = [
     "Ozono" => "Capa de Ozono",
     "Micro" => "Microplasticos",
     "EfecInverna" => "Efecto Invernadero",
-    "Deforest" => "Deforestacion Mundial"
+    "Deforest" => "Deforestacion Mundial",
+    "Animales" => "Extincion Animal"
 ];
 
 $_genero = ["Maculino", "Femenino", "No declaro"];

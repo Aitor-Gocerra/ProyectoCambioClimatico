@@ -9,17 +9,31 @@ nav {
     padding-bottom: 5px;
     width: 1400px;
     height: 30px;
-    background-color: #E8F4F8;
+    /*background-color: #E8F4F8;*/
 }
 a {
     margin-left: 30px;
     margin-top: 10px;
     padding: 5px;
     width: 45px;
-    background-color: #97BC62;
+    /*background-color: #97BC62;*/
     font-family: sans-serif;
-    color: #2C5F2D;
+    color: #123212;
     text-decoration: none;
+    position: relative;
+}
+a::after {
+	content: ''; /* Contenido inicial vacio */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #e7c95b; 
+	transition: width 0.6s ease;
+}
+a:hover::after { /* Cuando paso el raton */
+	width: 100%;
 }
 a.formulario{
     margin-left: 1015px;
