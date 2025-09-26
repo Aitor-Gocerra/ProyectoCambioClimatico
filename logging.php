@@ -1,14 +1,10 @@
 <?php
-    //include 'datos.php';
-
-    $_usuarios = [
-    1 => ["Aitor", "1234"],
-    2 => ["Miguel", "5678"],
-    3 => ["Isa", "1122"],
-    ];
+    include 'datos.php';
 
     $_nombre = $_POST["nombre"];
-    $_contraseña = $_POST["contraseña"];
+    $_contraseña = $_POST["password"];
+
+    $loginCorrecto = false;
 
     foreach ($_usuarios as $clave => $valor) {
         if($valor[0] === $_nombre && $valor[1] === $_contraseña){
@@ -18,11 +14,12 @@
     }
 
     if ($loginCorrecto) {
-        header("Location: index.html");
-        exit();
+        echo "<script>window.location.href = 'index.html';</script>";
     } else {
-        header("Location: login.php?error=1");
-        exit();
+        echo "<script>
+                alert('Contraseña o usuario incorrecto');
+                window.location.href = 'formUsuario.html';
+            </script>";
     }
 
 ?>
