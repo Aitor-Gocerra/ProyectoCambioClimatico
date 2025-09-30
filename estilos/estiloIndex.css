@@ -127,6 +127,10 @@ table {
     color: #2C5F2D;
 }
 
+/* FOOTER */
+footer h5{
+    text-align: center;
+}
 
 /* Estilos adicionales para formularios */
 input[type="text"], input[type="email"], textarea {
