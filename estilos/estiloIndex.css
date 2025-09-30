@@ -71,11 +71,12 @@ p {
     color: #09330d;
 }
 h2 {
-    text-align: center;
-    font-family: Arial, sans-serif; 
-    font-style: italic;             
+    text-align: center;          
     color: #09330d;
     letter-spacing: 3px;
+    font-family: "Kavivanar", cursive;
+    font-weight: 500px;
+    font-style: normal;
 }
 
 form {
