@@ -132,6 +132,10 @@ table {
 /* FOOTER */
 footer h5{
     text-align: center;
+    height: 30px;
+    padding: 10px;
+    color: #B8E6B8;
+    background-color: #09330d;
 }
 
 /* Estilos adicionales para formularios */
