@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    width: 1400px;
+    width: 1400px; /* Ancho fijo, de aqui parto, para controlar las medidas de mi pagina */
     background-color: #F5F5DC;
 } 
 /* HEADER */
@@ -43,7 +43,7 @@ a:hover::after { /* Cuando paso el raton */
 /* MAIN */
 img {
     width: 500px; 
-    margin-left: 450px; /*Deberian por calculos ser esto*/
+    margin-left: 450px; /* Centrado manual: (1400px - 500px) / 2 = 450px */
     height: auto;
     margin-right: 450px;
 }
@@ -176,6 +176,7 @@ td {
     padding: 8px;
     border: 1px solid #8B9D93; 
 }
+/* Pseudo-clase :last-child para seleccionar específicamente la última celda de cada fila */
 td:last-child {
-    text-align: right !important;
+    text-align: right !important; /* !important sobrescribe cualquier otra regla de especificidad menor */
 }

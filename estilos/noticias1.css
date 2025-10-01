@@ -19,11 +19,13 @@ a {
     font-family: sans-serif;
     color: #e2ede2;
     text-decoration: none;
-    position: relative;
+    position: relative; /* Necesario para posicionar el pseudo-elemento ::after */
 }
+
+/* Pseudo-elemento para efecto de subrayado animado */
 a::after {
 	content: ''; /* Contenido inicial vacio */
-	position: absolute;
+	position: absolute; /* Se posiciona relativo al elemento <a> */
 	left: 0;
 	bottom: 0;
 	width: 0%;
@@ -32,10 +34,10 @@ a::after {
 	transition: width 0.6s ease;
 }
 a:hover::after { /* Cuando paso el raton */
-	width: 100%;
+	width: 100%; /* Expansión completa del subrayado al hacer hover */
 }
 a.formulario{
-    margin-left: 1015px;
+    margin-left: 1015px; /* Cálculo para posicionar a la derecha del nav */
     margin-right: 20px;
 }
 
@@ -47,7 +49,7 @@ h1 {
     font-size: 110px;
     font-family: Arial, sans-serif;            
     color: #2C5F2D;
-    letter-spacing: 35px;
+    letter-spacing: 35px; /* Espaciado amplio entre letras para que se lea mejor */
 }
 
 .noticias{
@@ -60,8 +62,8 @@ h1 {
     width: 290px; 
     height: auto;
     margin-left: 10px;
-    display: inline-block;
-    vertical-align: top;
+    display: inline-block; /* Permite posicionar elementos en bloque horizontalmente */
+    vertical-align: top; /* Alinea en la parte superior, evita descuadre por línea base */
 }
 
 #no3 {
@@ -124,17 +126,11 @@ h1 {
     vertical-align: top;
     margin-top: 10px; 
 }
-ul {
-    color: inherit;
-}
-
-li {
-    color: inherit;
-    margin-bottom: 5px;
-}
+/* Agrupo selectores para aplicar las mismas propiedades a múltiples elementos */
 #naturaleza, #playa, #madrid, #no3, #no4, #no6, #no8 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* Pseudo-clase :hover con transformaciones para efecto interactivo */
 #naturaleza:hover, #playa:hover, #madrid:hover, #no3:hover, #no4:hover, #no6:hover, #no8:hover{
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -148,6 +144,7 @@ footer{
     color: #B8E6B8;
     background-color: #09330d;
 }
+/* Selector descendiente para estilos específicos */
 footer > h5{
     margin: 0;
 }
