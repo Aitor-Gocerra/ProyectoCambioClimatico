@@ -22,17 +22,17 @@ a {
     position: relative;
 }
 a::after {
-	content: ''; /* Contenido inicial vacio */
+	content: '';
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 0%;
+	width: 0;
 	height: 2px;
 	background-color: #e7c95b; 
 	transition: width 0.6s ease;
 }
-a:hover::after { /* Cuando paso el raton */
-	width: 100%;
+a:hover::after {
+	width: 100px;
 }
 a.formulario{
     margin-left: 1015px;
@@ -61,16 +61,20 @@ p {
 
 .noticias {
     background-color: #F5F5DC;
-    height: 1400px;
     padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 8px;
+    font-size: 0; /* Elimina espacios entre inline-block */
+}
+
+.noticias > div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px; /* Restaura el tamaño de fuente */
+    box-sizing: border-box;
 }
     
 .no1 {
-    grid-row: span 2 / span 2;
+    width: 340px;
+    height: 460px;
     padding: 10px;
 }
 .naturaleza {
@@ -80,9 +84,8 @@ p {
 }
 
 .no3 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 3;
+    width: 340px;
+    height: 690px;
     background-color: #B8E6B8;
     padding: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -93,20 +96,22 @@ p {
 }
 
 .no4 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 1;
+    width: 340px;
+    height: 690px;
     background-color: #4A90A4;
     padding: 5px;
     color: #F5F5DC;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: top;
+    margin-left: -340px;
+    margin-top: -460px;
 }
 .no4:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .no4 h2, .no4 h3, .no4 p, .no4 li {
-    color: #F5F5DC; /* Beige Natural para contraste */
+    color: #F5F5DC;
 }
 .australia {
     width: 325px; 
@@ -115,8 +120,8 @@ p {
 }
 
 .no5 {
-    grid-column-start: 1;
-    grid-row-start: 6;
+    width: 340px;
+    height: 230px;
     padding: 5px;
 }
 .madrid {
@@ -126,20 +131,19 @@ p {
 }
 
 .no6 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 4;
+    width: 680px;
+    height: 690px;
     background-color: #FF7F7F; 
     padding: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: top;
 }
 .no6:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .no6 h2, .no6 h3, .no6 p {
-    color: #2C5F2D; /* Verde Bosque Profundo para contraste */
+    color: #2C5F2D;
 }
 .chimenea {
     width: 670px; 
@@ -147,15 +151,15 @@ p {
     margin-left: 3px;
 }
 
+.no7 {
+    width: 680px;
+    height: 690px;
+    vertical-align: top;
+    margin-left: -680px;
+    margin-top: -460px;
+}
 .no7 h2, .no7 h3, .no7 p {
     color: #2C5F2D; 
-}
-.no7 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 1;
-    
 }
 .playa {
     margin-top: 225px;
@@ -167,12 +171,12 @@ p {
 }
 
 .no8 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 4;
+    width: 340px;
+    height: 690px;
     background-color: #2C5F2D;
     color: #F5F5DC;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: top;
 }
 .no8:hover {
     transform: translateY(-5px);
