@@ -1,5 +1,5 @@
 <?php
-    include 'datos.php';
+    require 'datos.php';
 
     $_nombre = $_POST["nombre"];
     $_contraseña = $_POST["password"];

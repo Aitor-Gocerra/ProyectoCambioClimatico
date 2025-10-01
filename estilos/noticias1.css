@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    width: 1400px;
+    background-color: #F5F5DC;
+} 
+nav {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 1400px;
+    height: 30px;
+    background-color: #09330d;
+}
+
+a {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 45px;
+    font-family: sans-serif;
+    color: #e2ede2;
+    text-decoration: none;
+    position: relative; /* Necesario para posicionar el pseudo-elemento ::after */
+}
+
+/* Pseudo-elemento para efecto de subrayado animado */
+a::after {
+	content: ''; /* Contenido inicial vacio */
+	position: absolute; /* Se posiciona relativo al elemento <a> */
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #e7c95b; 
+	transition: width 0.6s ease;
+}
+a:hover::after { /* Cuando paso el raton */
+	width: 100%; /* Expansión completa del subrayado al hacer hover */
+}
+a.formulario{
+    margin-left: 1015px; /* Cálculo para posicionar a la derecha del nav */
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 50px;
+    background-color: #F5F5DC;
+    text-align: center;
+    font-size: 110px;
+    font-family: Arial, sans-serif;            
+    color: #2C5F2D;
+    letter-spacing: 35px; /* Espaciado amplio entre letras para que se lea mejor */
+}
+
+.noticias{
+    background-color: #F5F5DC;
+    height: 1755px;
+    padding: 10px;
+}
+
+#naturaleza {
+    width: 290px; 
+    height: auto;
+    margin-left: 10px;
+    display: inline-block; /* Permite posicionar elementos en bloque horizontalmente */
+    vertical-align: top; /* Alinea en la parte superior, evita descuadre por línea base */
+}
+
+#no3 {
+    background-color: #B8E6B8;
+    width: 490px; 
+    display: inline-block;
+    padding: 20px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+#no4 {
+    width: 505px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    background-color: #4A90A4;
+    margin-left: 5px;
+}
+
+#australia {
+    width: 500px; 
+    height: auto;
+    margin-left: 2px;
+}
+
+#madrid {
+    width: 545px; 
+    height: auto;
+    margin-left: 2px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+#no6 {
+    background-color: #FF7F7F; 
+    width: 760px;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#chimenea {
+    width: 760px; 
+    height: auto;
+    margin-top: 3px;
+
+}
+#playa {
+    width: 670px;
+    margin-top: 10px; 
+    height: auto;
+}
+#no8 {
+    background-color: #2C5F2D;
+    color: #F5F5DC;
+    width: 665px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px; 
+}
+/* Agrupo selectores para aplicar las mismas propiedades a múltiples elementos */
+#naturaleza, #playa, #madrid, #no3, #no4, #no6, #no8 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Pseudo-clase :hover con transformaciones para efecto interactivo */
+#naturaleza:hover, #playa:hover, #madrid:hover, #no3:hover, #no4:hover, #no6:hover, #no8:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    height: 30px;
+    padding: 10px;
+    color: #B8E6B8;
+    background-color: #09330d;
+}
+/* Selector descendiente para estilos específicos */
+footer > h5{
+    margin: 0;
+}
