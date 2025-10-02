@@ -60,7 +60,7 @@ img.grafico {
     margin-bottom: 310px;
     padding: 10px;
     width: 320px;
-    height: 330px;
+    height: 430px;
     display: inline-block;
     vertical-align: top;
 }
@@ -81,12 +81,17 @@ h2 {
 }
 
 form {
-    padding: 5px;
+    padding: 10px;
     height: 280px;
     font-family: sans-serif;
     color: #2C5F2D;
 }
-
+form label {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
 .graficos {
     background-color: #E8F4F8;
     margin-top: 5px;
@@ -144,18 +149,30 @@ input[type="text"], input[type="email"], textarea {
     background-color: #F5F5DC; 
     border: 1px solid #8B9D93; 
     color: #2C5F2D; 
-    padding: 5px;
-    margin-left: 65px;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 290px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
 }
 
 input[type="submit"], input[type="reset"] {
     background-color: #97BC62; 
     color: #2C5F2D; 
     border: none;
-    padding: 8px 15px;
+    padding: 10px 20px;
     cursor: pointer;
-    margin: 15px;
-    margin-left: 50px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover, input[type="reset"]:hover {
@@ -179,4 +196,25 @@ td {
 /* Pseudo-clase :last-child para seleccionar específicamente la última celda de cada fila */
 td:last-child {
     text-align: right !important; /* !important sobrescribe cualquier otra regla de especificidad menor */
+}
+
+tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover en las filas de la tabla */
+tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #e7f5e7;
+    transform: scale(1.01);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr:hover td {
+    background-color: #e7f5e7;
+    color: #09330d;
+    font-weight: 500;
 }
